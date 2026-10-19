@@ -16,7 +16,14 @@ Then visit [http://localhost:4173](http://localhost:4173). No build step, packag
 
 ## Included
 
-- Three German career profiles
+- Five German career profiles
+- Five selectable professions with randomized default assignment
+- Animated player-controlled dice and randomized opening roll
+- Custom Dream goals connected to Fast Track victory
+- Five game pieces and up to three AI opponents
+- Easy, Medium and Real Life difficulty modes
+- Rat Race and Fast Track progression
+- Optional contextual Guided Assistance
 - Monthly income, expense, asset, debt and net-worth tracking
 - ETF, property, career, household, tax, pension and market events
 - German property-purchase friction and plausible consumer debt
