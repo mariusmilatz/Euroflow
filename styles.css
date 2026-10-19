@@ -85,3 +85,13 @@ html,body{background:#d9f0f6}.topbar{background:#fff;border-bottom:4px solid #65
 .track-space.rat b,.track-space.rat small,.track-space.rat.payday b,.track-space.rat.payday small{color:white;text-shadow:0 1px 1px #263146}.track-space.rat.current{box-shadow:none;outline:2px solid white;border-radius:3px}
 .dice-arena{inset:36%;border-radius:50%}.rat-label{top:29%;background:#fff8d9}
 @media(max-width:760px){.track-space.fast{width:10.5%}.track-space.fast.west,.track-space.fast.east{height:10.5%}.corner{width:10%;height:10%}.corner span{display:none}.track-space.rat{width:13%;height:11%}}
+
+/* Cashflow patent silhouette: side bays, inward arms, and an arched inner Fast Track. */
+.board{aspect-ratio:1.48;background:#aee5f1}.board:before{inset:11% 10%;background:#d7f2f7;border-radius:28px}
+.track-space.fast.north{width:12%;height:11%}.track-space.fast.west,.track-space.fast.east{width:8.5%;height:13.5%}.track-space.fast.south{width:11.5%;height:11%}
+.track-space.fast.arc{width:8.3%;height:11%;transform:translate(-50%,-50%) rotate(var(--track-angle))!important;z-index:4}.track-space.fast.arc b{font-size:5.5px}.track-space.fast.arc small{font-size:3.8px}
+.rat-race{width:35%;top:64%;z-index:5}.outer-label{top:14%;font-size:15px;background:transparent;border:0;box-shadow:none;color:#633087}
+.deck{width:14%;height:14%;z-index:6}.deck-small{left:15%;top:43%}.deck-big{left:15%;bottom:20%}.deck-market{right:15%;top:43%}.deck-doodad{right:15%;bottom:20%}
+.corner{width:10.5%;height:12%;z-index:8}.corner-tl,.corner-tr{top:1%}.corner-bl,.corner-br{bottom:1%}
+.dice-arena{inset:35%}.rat-label{top:28%}
+@media(max-width:760px){.board{aspect-ratio:1.45}.track-space.fast.arc{width:9%;height:11%}.rat-race{width:38%;top:64%}.deck{width:13%;height:13%}.deck-small,.deck-big{left:14%}.deck-market,.deck-doodad{right:14%}}
