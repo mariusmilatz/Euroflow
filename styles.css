@@ -53,3 +53,12 @@ html,body{background:#d9f0f6}.topbar{background:#fff;border-bottom:4px solid #65
 .brand,.board-heading h1,.setup-copy h2,.setup-card h3,.modal h2,.hero-number strong,.dream-card strong{font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.035em}.brand{letter-spacing:.08em}.roll-button span{font-family:Manrope,sans-serif;font-weight:900}.deck b{letter-spacing:-.04em}
 @media(max-width:1150px){.game-layout{grid-template-columns:235px 1fr}.right-panel{grid-template-columns:1.2fr 1fr 1fr}}
 @media(max-width:760px){.game-layout{display:block}.dream-company-grid{grid-template-columns:1fr}.track-space.fast{padding:2px}.track-space.fast b{font-size:7px}.track-space.fast small{display:none}}
+
+/* Patent-page geometry: 28-cell rounded perimeter and 24-cell inner race. */
+.board{width:min(99%,900px,calc((100vh - 205px)*1.42));aspect-ratio:1.42}.board-halo{width:min(100%,950px);aspect-ratio:1.42}
+.track-space.fast{width:12.6%;height:11.5%;max-width:none;max-height:none;border-radius:3px;padding:4px;box-shadow:0 0 0 2px #f1c52e,3px 4px 0 #59287c}
+.track-space.fast.west,.track-space.fast.east{width:8.3%;height:12.6%;max-width:none;max-height:none}
+.track-space.fast b{font-size:7px;line-height:1.05}.track-space.fast small{font-size:5px;line-height:1.08}.track-space.fast.west b,.track-space.fast.east b{font-size:6px}.track-space.fast.west small,.track-space.fast.east small{font-size:4.5px}
+.rat-race{width:48%}.track-space.rat{width:9.2%;height:9.2%;min-width:24px;min-height:24px}.track-space.rat b{font-size:9px}.track-space.rat small{font-size:4px}.rat-label{top:6%}.dice-arena{inset:33%}
+.deck{width:15%;height:12%}.deck-small,.deck-big{left:16%}.deck-market,.deck-doodad{right:16%}
+@media(max-width:760px){.board{width:min(99vw,620px)}.track-space.fast{width:12.5%;height:11%}.track-space.fast.west,.track-space.fast.east{width:8%;height:12.5%}.track-space.fast b{font-size:5px}.track-space.rat{min-width:18px;min-height:18px}.rat-race{width:50%}}
