@@ -8,3 +8,30 @@
 .board-wrap{min-height:500px;height:calc(100vh - 205px);max-height:580px;overflow:visible}.board{width:min(86%,480px,calc(100vh - 275px));max-width:100%;flex:0 0 auto}.board-halo{width:min(90%,525px,calc(100vh - 235px))}.track-space{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}.track-space b{font:700 12px DM Mono}.track-space small{font:500 5px DM Mono;letter-spacing:.02em;white-space:nowrap}.track-space[data-title]:after{display:none}.track-space.rat{width:42px;height:42px;margin:0}.track-space.fast{width:48px;height:48px;margin:0;background:linear-gradient(145deg,#1b4c3e,#0b2d24)}.pawn-board{width:19px;height:19px;margin:0;font-size:9px;pointer-events:none}.dice-arena{inset:34%;}.outer-label{top:13%;font-size:13px}.board:before{inset:3%;opacity:.55}
 @media(max-width:1150px){.board-wrap{height:520px}.board{width:min(88%,470px)}.board-halo{width:min(92%,515px)}}
 @media(max-width:760px){.board-wrap{height:430px;min-height:430px}.board{width:min(94vw,430px)}.board-halo{width:min(98vw,450px)}.track-space.rat{width:34px;height:34px}.track-space.fast{width:39px;height:39px}.track-space b{font-size:10px}.track-space small{display:none}.dice-arena{inset:33%}.outer-label{top:12%;font-size:10px}}
+
+/* Hybrid board: a Monopoly-like Fast Track surrounds the circular Rat Race. */
+.board-wrap{min-height:500px;height:calc(100vh - 205px);max-height:610px;padding:8px;overflow:visible}
+.board-halo{width:min(97%,850px);aspect-ratio:1.34;border-radius:54px;background:radial-gradient(ellipse,#fffdf6 20%,#b6aa8c55 67%,transparent 72%)}
+.board{width:min(96%,800px,calc((100vh - 225px)*1.34));aspect-ratio:1.34;border-radius:34px;background:linear-gradient(145deg,#d8eef0,#f5ead1 52%,#d9c69c);border:8px solid #42231d;box-shadow:inset 0 0 0 5px #d2af61,inset 0 0 0 11px #0d3c30,inset 0 0 32px #183b2d45,0 24px 42px #1c1b1440;overflow:visible}
+.board:before{inset:11%;border-radius:24px;background:linear-gradient(140deg,#cae4e8aa,#f6e7c8 62%,#d5bf94);border:2px solid #b7944f;opacity:1}
+.outer-label{top:15.5%;z-index:6;font:700 11px DM Mono;letter-spacing:.22em;color:#173e32;background:#f5e9cdcc;padding:4px 13px;border:1px solid #b8944e;border-radius:20px;text-shadow:none}
+.outer-track,.inner-track{position:absolute;inset:0}
+.track-space{margin:0;transform:translate(-50%,-50%)!important}
+.track-space.fast{width:17%;height:14%;max-width:126px;max-height:72px;border-radius:7px;background:linear-gradient(155deg,#18513f,#0a3027);border:2px solid #e5c568;box-shadow:inset 0 0 0 2px #ffffff0d,0 5px 10px #09231b52;z-index:5}
+.track-space.fast.west,.track-space.fast.east{width:10%;height:24%;max-width:72px;max-height:126px}
+.track-space.fast b{font:700 15px "Cormorant Garamond";color:#f5d771}
+.track-space.fast small{font-size:6px;color:#fff7dc;text-transform:uppercase;letter-spacing:.08em}
+.track-space.fast.current{transform:translate(-50%,-50%) scale(1.06)!important}
+.rat-race{position:absolute;left:50%;top:52%;width:53%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,#0d3429 0 27%,#c39a4d 27.5% 29%,#f3dfbd 29.5% 74%,#9f654f 74.5% 77%,#103d31 77.5% 86%,#d8b85e 86.5% 89%,#4a291d 89.5%);box-shadow:0 15px 26px #1b271f66,inset 0 0 18px #0004;z-index:3}
+.rat-race:before{content:"";position:absolute;inset:3%;border-radius:50%;background:repeating-conic-gradient(from -11deg,transparent 0 20.5deg,#72584026 20.7deg 22.3deg);pointer-events:none}
+.rat-label{position:absolute;left:50%;top:9%;transform:translateX(-50%);font:700 9px DM Mono;letter-spacing:.22em;color:#fff1bd;z-index:4}
+.track-space.rat{width:11%;height:11%;min-width:35px;min-height:35px;border-width:2px;z-index:5}
+.track-space.rat b{font-size:12px}.track-space.rat small{font-size:5px}
+.dice-arena{inset:31%;z-index:4}
+.deck{position:absolute;width:16%;height:14%;max-width:116px;max-height:76px;border:2px solid #f6df9a;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:4;box-shadow:0 8px 15px #18342945,inset 0 0 0 2px #ffffff2e;transform:rotate(-2deg)}
+.deck span{font:500 5px DM Mono;letter-spacing:.16em}.deck b{font:700 17px/1 "Cormorant Garamond"}
+.deck-small{left:14%;top:25%;background:linear-gradient(145deg,#5bbb63,#176c42);color:white}.deck-big{left:14%;bottom:22%;background:linear-gradient(145deg,#15976a,#07523d);color:white;transform:rotate(2deg)}
+.deck-market{right:14%;top:25%;background:linear-gradient(145deg,#c83c7f,#7d164e);color:white;transform:rotate(2deg)}.deck-doodad{right:14%;bottom:22%;background:linear-gradient(145deg,#68b9dc,#327ca8);color:white}
+.pawn-board{left:50%;top:50%;width:21px;height:21px;margin:0;transform:translate(calc(-50% + var(--pawn-x)),calc(-50% + var(--pawn-y)));font-size:10px}
+@media(max-width:1150px){.board-wrap{height:540px}.board{width:min(98%,720px)}.board-halo{width:min(100%,770px)}}
+@media(max-width:760px){.board-wrap{height:430px;min-height:430px;padding:0}.board{width:min(98vw,590px);border-width:5px;border-radius:22px}.board-halo{width:min(100vw,610px);border-radius:30px}.outer-label{font-size:8px;padding:3px 9px}.track-space.fast{min-width:0;width:17%;height:13%}.track-space.fast.west,.track-space.fast.east{width:10%;height:23%}.track-space.fast b{font-size:10px}.rat-race{width:55%}.track-space.rat{min-width:25px;min-height:25px}.track-space.rat b{font-size:9px}.deck{width:14%;height:12%}.deck b{font-size:10px}.deck span,.deck small{display:none}.dice-arena{inset:30%}}
