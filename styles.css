@@ -63,3 +63,14 @@ html,body{background:#d9f0f6}.topbar{background:#fff;border-bottom:4px solid #65
 .deck{width:13%;height:11%}.deck-small,.deck-big{left:12%}.deck-market,.deck-doodad{right:12%}.deck-small,.deck-market{top:29%}.deck-big,.deck-doodad{bottom:25%}
 .pawn-board{width:15px;height:15px;font-size:7px;border-width:1px;box-shadow:0 0 0 1px #562473,1px 2px 0 #f3c82d}
 @media(max-width:760px){.board{width:min(99vw,620px)}.track-space.fast{width:12.5%;height:11%}.track-space.fast.west,.track-space.fast.east{width:8%;height:12.5%}.track-space.fast b{font-size:5px}.track-space.rat{min-width:16px;min-height:16px}.rat-race{width:44%;top:55%}.deck{width:12%}.deck-small,.deck-big{left:11%}.deck-market,.deck-doodad{right:11%}}
+
+/* Flat printed-board finish and tapered Rat Race sectors. */
+.board-halo{display:none}.board{box-shadow:none}.board:before{box-shadow:none}
+.track-space.fast{box-shadow:none;border-width:1px;outline:2px solid #f1c52e}.track-space.fast.current{box-shadow:0 0 0 3px #fff,0 0 0 6px #ff4f83}
+.rat-race{width:46%;top:54%;box-shadow:none;background:radial-gradient(circle,#fff5c7 0 31%,#f6c931 31.5% 34%,#f9f5dd 34.5% 73%,#f5b82e 73.5% 78%,#65318c 78.5% 88%,#ffd637 88.5% 92%,#4b1f69 92.5%)}
+.track-space.rat{width:15%;height:10.5%;min-width:0;min-height:0;border:1px solid #4e226e;border-radius:0;background:#15945a;color:white;box-shadow:none;clip-path:polygon(8% 0,92% 0,100% 100%,0 100%);transform:translate(-50%,-50%) rotate(var(--space-angle))!important;padding:1px;gap:0}
+.track-space.rat>span{display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}.track-space.rat b{font-size:7px;color:#fff}.track-space.rat small{font-size:3.6px;color:#fff;font-weight:800}.track-space.rat.market{background:#d52d88}.track-space.rat.doodad{background:#53b4dc}.track-space.rat.payday{background:#ffe43e;color:#593171}.track-space.rat.payday b,.track-space.rat.payday small{color:#593171}.track-space.rat.baby{background:#f05d75}.track-space.rat.charity{background:#7c4ba4}.track-space.rat.downsized{background:#ed4e4e}
+.track-space.rat.current{box-shadow:0 0 0 3px white,0 0 0 5px #ff4f83;scale:1.08}
+.rat-race:before{opacity:.35}.deck{box-shadow:0 0 0 3px #f6cc34,6px 7px 0 #613080}.pawn-board{box-shadow:0 2px 5px #241332aa,0 0 0 1px #562473}
+.rat-label{top:24%}.dice-arena{box-shadow:none;border:5px solid #f3c92f;outline:3px solid white}
+@media(max-width:760px){.rat-race{width:47%;top:54%}.track-space.rat{width:15%;height:10%}.track-space.rat b{font-size:5px}.track-space.rat small{font-size:2.8px}}
