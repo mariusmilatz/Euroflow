@@ -2,9 +2,15 @@
 
 An English-language financial life simulation grounded in the German system.
 
+## Play now - no installation
+
+[![Play Euroflow](https://img.shields.io/badge/PLAY_EUROFLOW-Open_the_game-6b2f91?style=for-the-badge&logo=github)](https://mariusmilatz.github.io/Euroflow/)
+
+Open **[mariusmilatz.github.io/Euroflow](https://mariusmilatz.github.io/Euroflow/)** in Safari, Chrome, Edge, or Firefox. It works on Mac and Windows and saves the game in that browser.
+
 Euroflow keeps the useful learning loop of classic cash-flow board games - income, expenses, assets, liabilities, opportunities and market events - but replaces US-only assumptions with German financial realities.
 
-## Play locally
+## Optional local play
 
 Open `index.html` directly, or run a small local server:
 
