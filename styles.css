@@ -59,6 +59,7 @@ html,body{background:#d9f0f6}.topbar{background:#fff;border-bottom:4px solid #65
 .track-space.fast{width:12.6%;height:11.5%;max-width:none;max-height:none;border-radius:3px;padding:4px;box-shadow:0 0 0 2px #f1c52e,3px 4px 0 #59287c}
 .track-space.fast.west,.track-space.fast.east{width:8.3%;height:12.6%;max-width:none;max-height:none}
 .track-space.fast b{font-size:7px;line-height:1.05}.track-space.fast small{font-size:5px;line-height:1.08}.track-space.fast.west b,.track-space.fast.east b{font-size:6px}.track-space.fast.west small,.track-space.fast.east small{font-size:4.5px}
-.rat-race{width:48%}.track-space.rat{width:9.2%;height:9.2%;min-width:24px;min-height:24px}.track-space.rat b{font-size:9px}.track-space.rat small{font-size:4px}.rat-label{top:6%}.dice-arena{inset:33%}
-.deck{width:15%;height:12%}.deck-small,.deck-big{left:16%}.deck-market,.deck-doodad{right:16%}
-@media(max-width:760px){.board{width:min(99vw,620px)}.track-space.fast{width:12.5%;height:11%}.track-space.fast.west,.track-space.fast.east{width:8%;height:12.5%}.track-space.fast b{font-size:5px}.track-space.rat{min-width:18px;min-height:18px}.rat-race{width:50%}}
+.rat-race{width:42%;top:55%}.track-space.rat{width:9%;height:9%;min-width:21px;min-height:21px}.track-space.rat b{font-size:8px}.track-space.rat small{font-size:3.7px}.rat-label{top:22%;z-index:6;background:#fff6c9;padding:2px 7px;border-radius:10px;color:#673081}.dice-arena{inset:33%}
+.deck{width:13%;height:11%}.deck-small,.deck-big{left:12%}.deck-market,.deck-doodad{right:12%}.deck-small,.deck-market{top:29%}.deck-big,.deck-doodad{bottom:25%}
+.pawn-board{width:15px;height:15px;font-size:7px;border-width:1px;box-shadow:0 0 0 1px #562473,1px 2px 0 #f3c82d}
+@media(max-width:760px){.board{width:min(99vw,620px)}.track-space.fast{width:12.5%;height:11%}.track-space.fast.west,.track-space.fast.east{width:8%;height:12.5%}.track-space.fast b{font-size:5px}.track-space.rat{min-width:16px;min-height:16px}.rat-race{width:44%;top:55%}.deck{width:12%}.deck-small,.deck-big{left:11%}.deck-market,.deck-doodad{right:11%}}
