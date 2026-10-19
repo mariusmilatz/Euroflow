@@ -74,3 +74,14 @@ html,body{background:#d9f0f6}.topbar{background:#fff;border-bottom:4px solid #65
 .rat-race:before{opacity:.35}.deck{box-shadow:0 0 0 3px #f6cc34,6px 7px 0 #613080}.pawn-board{box-shadow:0 2px 5px #241332aa,0 0 0 1px #562473}
 .rat-label{top:24%}.dice-arena{box-shadow:none;border:5px solid #f3c92f;outline:3px solid white}
 @media(max-width:760px){.rat-race{width:47%;top:54%}.track-space.rat{width:15%;height:10%}.track-space.rat b{font-size:5px}.track-space.rat small{font-size:2.8px}}
+
+/* Exact lanes: no tile overlap, four corner squares, one continuous wedge ring. */
+.track-space.fast{width:10.6%;height:11%;overflow:hidden}.track-space.fast.west,.track-space.fast.east{width:8.3%;height:10.6%}.track-space.fast b,.track-space.fast small{max-width:100%;overflow-wrap:anywhere;text-align:center}
+.corner{position:absolute;width:10.4%;height:10.4%;z-index:7;border:2px solid #fff;outline:2px solid #f1c52e;background:#ffdf38;color:#54246f;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3px}
+.corner b{font:900 12px Manrope}.corner span{font:900 5px/1.05 Manrope}.corner-tl{left:1%;top:1%;border-radius:24px 0 0 0;background:#a95ac3}.corner-tr{right:1%;top:1%;border-radius:0 24px 0 0;background:#ef4f52}.corner-br{right:1%;bottom:1%;border-radius:0 0 24px 0}.corner-bl{left:1%;bottom:1%;border-radius:0 0 0 24px;background:#50b7df}
+.rat-race{background:radial-gradient(circle,#fff8d9 0 34%,transparent 34.5%),repeating-conic-gradient(from -7.5deg,#15945a 0 15deg,#54b7dd 15deg 30deg,#15945a 30deg 45deg,#d52d88 45deg 60deg);border:5px solid #5c287d;outline:5px solid #f5c828}
+.rat-race:before{inset:0;background:radial-gradient(circle,transparent 0 33.5%,#552475 34% 35%,transparent 35.5% 88%,#552475 88.5% 90%,transparent 90.5%);opacity:1}
+.track-space.rat,.track-space.rat.market,.track-space.rat.doodad,.track-space.rat.payday,.track-space.rat.baby,.track-space.rat.charity,.track-space.rat.downsized{width:13%;height:12%;background:transparent;border:0;clip-path:none;color:white;box-shadow:none;padding:0}
+.track-space.rat b,.track-space.rat small,.track-space.rat.payday b,.track-space.rat.payday small{color:white;text-shadow:0 1px 1px #263146}.track-space.rat.current{box-shadow:none;outline:2px solid white;border-radius:3px}
+.dice-arena{inset:36%;border-radius:50%}.rat-label{top:29%;background:#fff8d9}
+@media(max-width:760px){.track-space.fast{width:10.5%}.track-space.fast.west,.track-space.fast.east{height:10.5%}.corner{width:10%;height:10%}.corner span{display:none}.track-space.rat{width:13%;height:11%}}
